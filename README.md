@@ -77,4 +77,5 @@ A aplicação foi projetada seguindo princípios de escalabilidade, segurança e
 ## 📚 Projeto Acadêmico
 
 Este projeto foi desenvolvido como parte da formação da **Escola da Nuvem**, aplicando conceitos de computação em nuvem, segurança, automação e arquitetura serverless. 
+
 CityShield © 2026 - Segurança Integrada Inteligente para Cidades Inteligentes
