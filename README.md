@@ -51,16 +51,19 @@ A aplicação foi projetada seguindo princípios de escalabilidade, segurança e
 - Inteligência Artificial
 - Monitoramento e Observabilidade
 
-## 📂 Estrutura do Projeto
+### Serviços AWS (Serverless)
 
-```bash
-CityShield/
-├── frontend/
-├── backend/
-├── infrastructure/
-├── docs/
-└── README.md
-````
+| Serviço | Categoria | Função |
+|----------|----------|----------|
+| Kinesis Video Streams | Ingestão de Dados | Streaming de vídeo de múltiplas câmeras |
+| Rekognition | Inteligência Artificial (IA/ML) | Detecção e comparação facial |
+| Lambda | Orquestração | Execução da lógica de negócio sem servidor, acionada por eventos |
+| SNS | Notificações | Distribuição de alertas via SMS, push e webhooks |
+| GuardDuty | Segurança | Detecção de ameaças cibernéticas utilizando Machine Learning |
+| EventBridge | Gerenciamento de Eventos | Roteamento, integração e filtragem de eventos |
+| WAF | Proteção de Aplicações | Bloqueio em tempo real de IPs maliciosos e ataques web |
+| DynamoDB | Banco de Dados | Armazenamento de incidentes e registros em tempo real |
+| S3 | Armazenamento | Armazenamento de evidências, imagens e logs para conformidade legal |
 
 ## 🎯 Principais Funcionalidades
 
@@ -73,4 +76,5 @@ CityShield/
 
 ## 📚 Projeto Acadêmico
 
-Este projeto foi desenvolvido como parte da formação da **Escola da Nuvem**, aplicando conceitos de computação em nuvem, segurança, automação e arquitetura serverless. ([LinkedIn][1])
+Este projeto foi desenvolvido como parte da formação da **Escola da Nuvem**, aplicando conceitos de computação em nuvem, segurança, automação e arquitetura serverless. 
+CityShield © 2026 - Segurança Integrada Inteligente para Cidades Inteligentes
