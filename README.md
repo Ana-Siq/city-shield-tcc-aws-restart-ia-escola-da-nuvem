@@ -65,6 +65,25 @@ A aplicação foi projetada seguindo princípios de escalabilidade, segurança e
 | DynamoDB | Banco de Dados | Armazenamento de incidentes e registros em tempo real |
 | S3 | Armazenamento | Armazenamento de evidências, imagens e logs para conformidade legal |
 
+### Estimativa de Custo Mensal (Cenário Urbano Médio)
+
+Baseado em uma cidade com **500 câmeras** em operação H24 + **infraestrutura digital moderada**:
+
+| Serviço | Uso Estimado | Custo Mensal | Notas |
+|---------|--------------|--------------|-------|
+| **Kinesis Video Streams** | 500 câmeras × 1 Mbps | ~USD 3.500 | Maior custo; streaming contínuo |
+| **Rekognition (Análise)** | ~200M frames/mês | ~USD 1.800 | Detecção facial ~0,01 USD por 1000 imagens |
+| **Lambda (Orquestração)** | ~50M invocações/mês | ~USD 400 | Execução de funções dispara no evento |
+| **SNS (Notificações)** | ~1M mensagens/mês | ~USD 50 | SMS + push notifications |
+| **GuardDuty (Segurança)** | Análise contínua | ~USD 2.000 | Custo fixo por ativação; alto valor agregado |
+| **EventBridge** | ~50M eventos/mês | ~USD 20 | Roteamento praticamente gratuito |
+| **WAF (Proteção)** | ~100M requisições | ~USD 200 | Proteção em tempo real |
+| **DynamoDB** | 10 GB/mês armazenado | ~USD 300 | Leitura/escrita sob demanda |
+| **S3 (Evidências)** | ~500 GB/mês armazenado | ~USD 12 | Menos crítico; retenção longa |
+| **Extras** (Transferência, logs) | - | ~USD 200 | Overhead de rede/CloudWatch |
+| **TOTAL ESTIMADO** | - | **~USD 8.482/mês** | **~USD 101.784/ano** |
+
+
 ## 🎯 Principais Funcionalidades
 
 * Monitoramento de eventos em tempo real;
