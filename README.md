@@ -5,6 +5,16 @@ Projeto desenvolvido a partir de um desafio inspirado no mercado real, exigindo 
 
 Sistema inteligente de segurança urbana com foco em monitoramento de eventos, análise em tempo real e integração de serviços AWS para apoio à gestão de cidades inteligentes. A solução combina segurança física e cibernética utilizando uma arquitetura orientada a eventos e serviços serverless da AWS. 
 
+## 👥 Equipe Técnica (Grupo 6)
+
+| Nome | Papel |
+|------|--------|
+| Gabriel Falcão da Cruz | Arquiteto |
+| Fernanda Ferreira de Oliveira | Líder Técnica |
+| Marcos Gomes de Lima | Desenvolvedor |
+| Ana Paula da Silva Siqueira | Desenvolvedora |
+| João Vitor Pontes | Desenvolvedor |
+
 ## 🚀 Objetivo
 
 Fornecer uma plataforma escalável para:
